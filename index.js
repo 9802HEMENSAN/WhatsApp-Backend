@@ -12,7 +12,7 @@ const app = express();
  
 Connection();
 
-app.listen(process.env.PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
+app.listen(process.env.PORT, () => console.log(`Server is running successfully on PORT ${process.env.PORT}`));
 
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
